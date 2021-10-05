@@ -58,7 +58,7 @@ const Contact = () => {
                             {'//'} A LITTLE BIT MORE<span className={styles.blink}>_</span>
                         </h1>
                         <p>
-                            Based in Toronto, Canada. I&apso;m a student at the University of Toronto graduating December 2021, looking for full-time opportunities for January 2022.
+                            Based in Toronto, Canada. I&apos;m a student at the University of Toronto graduating December 2021, looking for full-time opportunities for January 2022.
                             For inquiries, you can leave me a message or reach me on my social media, and I will get back to you ASAP.    
                         </p>
                     </div>
