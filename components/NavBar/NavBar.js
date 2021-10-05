@@ -3,7 +3,7 @@ import styles from './NavBar.module.scss';
 import Image from 'next/image'; 
 import { useRouter } from 'next/router';
 
-import logo from './Open.png';
+import logo from '../../public/static/images/Open.png';
 import { FaHamburger } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
 
@@ -44,6 +44,7 @@ const NavBar = (props) => {
         <nav className={styles.navbarContainer}>
             <div className={styles.logoContainer}>
                 <Image src={logo} alt='logo' className={styles.logo} onClick={goHome} width={160}/>
+
             </div>
             <div className={styles.navItemsContainer}>
                 {navItems.map(

@@ -4,15 +4,12 @@ import NavBar from '../components/NavBar/NavBar.js';
 import Footer from '../components/Footer/Footer.js';
 import styles from '../styles/Home.module.scss';
 import MainBodyContainer from '../components/mainBody/mainBody.js';
-import hp from '../components/images/hp.png';
-import hp2 from '../components/images/hp2.png';
-import laptop from '../components/images/laptop.png'
-import laptop2 from '../components/images/laptop2.png'
+
 import { Parallax } from 'react-scroll-parallax';
 import { useEffect } from 'react';
-import c1 from '../components/images/d1.png';
-import c2 from '../components/images/d2.png';
-import c3 from '../components/images/d3.png';
+import c1 from '../public/static/images/d1.png';
+import c2 from '../public/static/images/d2.png';
+import c3 from '../public/static/images/d3.png';
 
 
 export default function Home() {
