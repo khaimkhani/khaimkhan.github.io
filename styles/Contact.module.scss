@@ -1,0 +1,191 @@
+.contactContainer {
+    
+    position: relative;
+    display: flex;
+    font-family: monospace;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 4%;
+    height: 100vh;
+    
+
+        .socialContainer {
+            margin-top: 3%;
+            color: rgb(255, 66, 66);
+            width: 50%;
+            position: relative;
+            // top: 10%;
+            
+            padding: 2%;
+            z-index: 4;
+            transition: 400ms background-color, 400ms transform;
+            cursor: pointer;
+            
+            h1 {
+                animation: headAnime 2s infinite;
+            }
+            p {
+                color: rgb(42, 252, 217);
+            }
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.199);
+                backdrop-filter: blur(6px);
+                transform: scale(1.2);
+                transition: 300ms background-color, 300ms transform;
+                z-index: 10;
+            }
+        }
+
+        .animatedDiv {
+            position: absolute;
+            background-color: transparent;
+            border-left: 3px solid rgba(42, 252, 217, 0.801);
+            border-right: 3px solid rgba(42, 252, 217, 0.801);
+            
+            width: 50%;
+            animation: divAnim 3s forwards;
+        }
+        .animatedDiv2 {
+            position: absolute;
+            background-color: transparent;
+            border-left: 2px solid rgba(42, 252, 217, 0.500);
+            border-right: 2px solid rgba(42, 252, 217, 0.500);
+            
+            width: 60%;
+            animation: divAnim 2.5s 500ms forwards;
+        }
+
+        .animatedDiv3 {
+            position: absolute;
+            background-color: transparent;
+            border-left: 1px solid rgba(42, 252, 217, 0.327);
+            border-right: 1px solid rgba(42, 252, 217, 0.327);
+            
+            width: 70%;
+            animation: divAnim 2.3s 700ms forwards;
+        }
+
+        .icons {
+            position: relative;
+            color: rgb(31, 99, 87);
+            width: 30%;
+            height: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            a {
+                text-decoration: none;
+            }
+
+            * {
+                margin: 1%;
+                transition: 200ms color;
+                &:hover {
+                    color: rgb(35, 201, 170);
+        
+                    transition: 140ms color;
+                }
+            }
+
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 70%;
+            padding: 0;
+            color: rgb(42, 252, 217);
+            z-index: 5;
+            
+            input {
+                width: 50%;
+            }
+
+            textarea {
+                width: 50%;
+            }
+
+            input, textarea {
+                margin: 1%;
+                
+                background-color: transparent;
+                color: rgb(42, 252, 217);
+                border: transparent;
+                border-bottom: 1px solid rgba(42, 252, 217, 0.493);
+            
+                &::placeholder {
+                    color: rgb(42, 252, 217);
+                    font-family: monospace;
+                }
+
+                &:focus {
+                    border: transparent;
+                }
+            }
+            input[type=submit] {
+                font-family: monospace;
+                margin: 1%;
+                background-color: rgba(35, 122, 108, 0.493);
+                height: 5%;
+                width: 10%;
+                border: transparent;
+                transition: 250ms color, 250ms background-color, 250ms border;
+                &:hover {
+                    color: rgb(42, 252, 217);
+                    background-color: transparent;
+                    border: 1px solid rgb(42, 252, 217);
+                    transition: 150ms color, 150ms background-color, 150ms border;
+                }
+            }
+            
+        }
+    
+}
+
+.blink {
+    animation: blinkAnim 1s infinite;
+  }
+  
+@keyframes blinkAnim {
+    0% {
+      color: inherit;
+    }
+    50% {
+      color: transparent
+    }
+    100% {
+      color: inherit;
+    }
+}
+
+
+
+@keyframes headAnime {
+    0% {
+      filter: brightness(0.7);
+    }
+    50% {
+      filter: brightness(1);
+    }
+    100% {
+      filter: brightness(0.7);
+    }
+  }
+  
+
+@keyframes divAnim {
+    0% {
+        height: 0%;
+    }
+
+    100% {
+        height: 80%;
+    }
+}

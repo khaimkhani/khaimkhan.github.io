@@ -1,0 +1,15 @@
+.mainBodyContainer {
+    position: relative;
+    top: 0;
+    z-index: 1;
+    min-height: 100vh;
+    // height: fit-content;
+    width: 100%;
+    background: linear-gradient(to right, rgb(4, 34, 31), rgb(5, 12, 11));
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-around;
+    align-items: center;
+    
+}
+

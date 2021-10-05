@@ -1,0 +1,179 @@
+.container {
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+.laptopContainer {
+  position: absolute;
+  top: 0%;
+  right: 3%;
+  width: fit-content;
+  display: block;
+  height: fit-content;
+  padding-left: 2%;
+
+  Image {
+    position: absolute;
+  }
+
+}
+
+.cubeContainer1 {
+  position: absolute;
+  left: 5%;
+  top: 2.5%;
+  z-index: 2;
+  width: 50%;
+  Image {
+    position: inherit;
+  }
+}
+
+.cubeContainer2 {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  z-index: 1;
+  width: 50%;
+  Image {
+    position: inherit;
+  }
+}
+
+.cubeContainer3 {
+  position: absolute;
+  left: 5%;
+  top: 7%;
+  z-index: -1;
+  width: 50%;
+  
+  Image {
+    position: inherit;
+
+  }
+}
+
+
+
+.homeContainer {
+  margin-top: 15%;
+  margin-bottom: 10%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  border-left: 3px solid rgba(42, 252, 217, 0.527);
+  z-index: 4;
+  margin-left: 30%;
+  margin-right: 10%;
+  width: 60%;
+  overflow: hidden;
+  backdrop-filter: blur(7px);
+  
+  
+  .firstInfo {
+    color: transparent;
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    height: fit-content;
+    font-family: monospace;
+    padding: 0 0 0 4%;
+    border-left: 1px solid rgba(42, 252, 217, 0.527);
+    transition: 400ms border-left, 400ms background-color;
+    // background-color: rgba(13, 29, 27, 0.637);
+    z-index: 5;
+    
+    h1 {
+      color: rgb(255, 66, 66);
+      font-size: 2.7em;
+      animation: headAnime 4s infinite;
+      width: fit-content;
+    }
+  
+    p {
+      
+      color: rgb(42, 252, 217);
+      font-size: 1.5em;
+      line-height: 150%;
+      width: fit-content;
+    }
+
+    &:hover {
+      border-left: 6px solid rgba(42, 252, 217, 0.527);
+      transition: 250ms border-left, 250ms background-color;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+
+.interest {
+  list-style-type: none;
+  font-size: 0.8em;
+  cursor: pointer;
+  li {
+    color: rgb(47, 199, 174);
+    
+    &:hover {
+      color: rgb(42, 252, 217);
+    }
+  }  
+}
+
+.optimize, .ml, .vision, .ui {
+  cursor: pointer;
+  font-size: 0.8em;
+  li {
+    color: rgb(47, 199, 174);
+
+  }
+}
+
+.blink {
+  animation: blinkAnim 1s infinite;
+}
+
+.todo {
+  color: rgb(255, 208, 0);
+}
+
+
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@keyframes blinkAnim {
+  0% {
+    color: inherit;
+  }
+  50% {
+    color: transparent
+  }
+  100% {
+    color: inherit;
+  }
+}
+
+@keyframes headAnime {
+  0% {
+    filter: brightness(0.7);
+  }
+  50% {
+    filter: brightness(1);
+  }
+  100% {
+    filter: brightness(0.7);
+  }
+}

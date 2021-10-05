@@ -1,0 +1,15 @@
+.footerContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7em;
+    color: rgb(118, 207, 198);
+    background: linear-gradient(to right, rgb(4, 34, 31), rgb(5, 12, 11));
+    height: 4vh;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
