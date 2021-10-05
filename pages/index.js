@@ -37,7 +37,7 @@ export default function Home() {
           <Image src={c3} alt='cube' width={300} height={200} id='c3' />
         </Parallax>
         <div className={styles.homeContainer}>
-          <div className={styles.firstInfo} data-aos='fade-up'>
+          <div className={styles.firstInfo}>
             <h1>
               SOFTWARE DEVELOPER<strong className={styles.blink}>_</strong>
             </h1>
@@ -60,7 +60,7 @@ export default function Home() {
               </ul>
             </p>
           </div>
-          <div className={styles.firstInfo} data-aos='fade-up'>
+          <div className={styles.firstInfo}>
             <h1>
               WEB + UI/UX DESIGN<strong className={styles.blink}>_</strong>
             </h1>
@@ -95,7 +95,7 @@ export default function Home() {
             </ul>
             </p>
           </div>  
-          <div className={styles.firstInfo} id='optimize'>
+          <div className={styles.firstInfo}>
             <h1>
               OPTIMAL ALGORITHMS<strong className={styles.blink}>_</strong>
             </h1>
