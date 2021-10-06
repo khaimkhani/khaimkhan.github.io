@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 4%;
+    margin-top: 0%;
     height: 100vh;
     
 
@@ -134,7 +134,7 @@
                 margin: 1%;
                 background-color: rgba(35, 122, 108, 0.493);
                 height: 5%;
-                width: 10%;
+                width: 12%;
                 border: transparent;
                 transition: 250ms color, 250ms background-color, 250ms border;
                 &:hover {
@@ -226,6 +226,17 @@
             color: rgb(36, 184, 164);
             transition: 150ms color;
           }
+        }
+    }
+
+    .contactContainer {
+
+        form {
+    
+            input[type=submit] {
+                font-size: 2vw;
+                width: 15%;
+            }
         }
     }
   }
