@@ -14,7 +14,7 @@
         .socialContainer {
             margin-top: 3%;
             color: rgb(255, 66, 66);
-            width: 50%;
+            width: 60%;
             position: relative;
             // top: 10%;
             
@@ -45,7 +45,7 @@
             border-left: 3px solid rgba(42, 252, 217, 0.801);
             border-right: 3px solid rgba(42, 252, 217, 0.801);
             
-            width: 50%;
+            width: 60%;
             animation: divAnim 3s forwards;
         }
         .animatedDiv2 {
@@ -54,7 +54,7 @@
             border-left: 2px solid rgba(42, 252, 217, 0.500);
             border-right: 2px solid rgba(42, 252, 217, 0.500);
             
-            width: 60%;
+            width: 70%;
             animation: divAnim 2.5s 500ms forwards;
         }
 
@@ -64,14 +64,14 @@
             border-left: 1px solid rgba(42, 252, 217, 0.327);
             border-right: 1px solid rgba(42, 252, 217, 0.327);
             
-            width: 70%;
+            width: 80%;
             animation: divAnim 2.3s 700ms forwards;
         }
 
         .icons {
             position: relative;
             color: rgb(31, 99, 87);
-            width: 30%;
+            width: 40%;
             height: 30%;
             display: flex;
             justify-content: center;
@@ -99,7 +99,7 @@
             justify-content: center;
             align-items: center;
             height: 100%;
-            width: 70%;
+            width: 80%;
             padding: 0;
             color: rgb(42, 252, 217);
             z-index: 5;
