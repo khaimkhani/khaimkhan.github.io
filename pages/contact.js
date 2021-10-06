@@ -96,7 +96,7 @@ const Contact = () => {
                         <a href='https://www.linkedin.com/in/muhammad-taimor-khan-8b938b1b8/' target='_blank' rel='noopener noreferrer'>
                         <AiFillLinkedin size={25} />
                         </a>
-                        <AiOutlineMail size={25} data-tip data-for='mail' onClick={() => copyMessage('anjasinski07@gmail.com')}/>
+                        <AiOutlineMail size={25} data-tip data-for='mail' onClick={() => copyMessage('mtaimorkhan@gmail.com')}/>
                         <ReactTooltip id='mail' effect='solid' place='top'>
                             {
                                 copied ?
