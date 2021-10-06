@@ -7,6 +7,7 @@ import styles from '../styles/Contact.module.scss';
 import { AiFillLinkedin, AiFillGithub, AiOutlineMail } from 'react-icons/ai';
 import ReactTooltip from 'react-tooltip';
 import emailjs from 'emailjs-com';
+import { useRouter } from "next/router";
 
 
 
@@ -19,6 +20,21 @@ const Contact = () => {
     const template = process.env.NEXT_PUBLIC_TEMPLATE;
     const serviceID = process.env.NEXT_PUBLIC_S_TEMP;
     
+    const [drop, setDrop] = useState(false);
+    const router = useRouter();
+    const handleClick = (key) => {
+        switch (key) {
+            case 0:
+                router.push('/portfolio');
+                break;
+
+            case 1:
+                router.push('/freelance');
+                break;
+            default:
+                router.push('/contact');    
+        }
+    };
 
     function submitForm(e) {
         
@@ -50,7 +66,12 @@ const Contact = () => {
                 <meta name="description" content="Contact Taimor Khan and let him know why he deserves the world" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <NavBar highlight='CONTACT'/>
+            <NavBar highlight='CONTACT' drop={drop} setDrop={setDrop} />
+            <div className={drop ? styles.dropdown : styles.dropdownHidden}>
+                <span onClick={() => handleClick(0)}>PORTFOLIO</span>
+                <span onClick={() => handleClick(1)}>FREELANCE</span>
+                <span onClick={() => handleClick(2)}>CONTACT</span>
+            </div>
             <MainBodyContainer>
                 <div className={styles.contactContainer}>
                     <div className={styles.socialContainer}>

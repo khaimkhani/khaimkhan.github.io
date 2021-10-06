@@ -11,7 +11,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 
 const NavBar = (props) => {
 
-    const [drop, setDrop] = useState(false);
+    
     const router = useRouter();
 
     const navItems = [
@@ -44,7 +44,7 @@ const NavBar = (props) => {
         <nav className={styles.navbarContainer}>
             <div className={styles.logoContainer}>
                 <Image src={logo} alt='logo' className={styles.logo} onClick={goHome} width={160}/>
-
+        
             </div>
             <div className={styles.navItemsContainer}>
                 {navItems.map(
@@ -54,20 +54,12 @@ const NavBar = (props) => {
                         </span>
                 )}
             </div>
+            
             <div className={styles.mobileContainer}>
-                {drop ? <AiOutlineClose onClick={() => setDrop(!drop)} size={20} /> : <FaHamburger onClick={() => setDrop(!drop)} size={20} />}
-                
+                {props.drop ? <AiOutlineClose onClick={() => props.setDrop(!props.drop)} size={20} /> : <FaHamburger onClick={() => props.setDrop(!props.drop)} size={20} />}
+            
             </div>
-            {drop && 
-            <div className={styles.dropdownmenu}>
-                {navItems.map(
-                    (items, i) => 
-                    <span key={i}>
-                        {items}
-                    </span>
-                )}
-            </div>
-            }
+         
         </nav>
     )
 }

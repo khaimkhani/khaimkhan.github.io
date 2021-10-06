@@ -61,7 +61,7 @@
 
 
 .homeContainer {
-  margin-top: 15%;
+  margin-top: 12%;
   margin-bottom: 10%;
   position: relative;
   display: flex;
@@ -145,6 +145,24 @@
   color: rgb(255, 208, 0);
 }
 
+.dropdown {
+  display: none;
+}
+
+.dropdownHidden {
+  width: 100%;
+  background: linear-gradient(to right, rgb(4, 34, 31), rgb(5, 12, 11));
+  height: 10vh;
+  font-family: monospace;
+  font-size: 1.3em;
+  color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  transition: 300ms height;
+}
+
 
 
 @media (max-width: 600px) {
@@ -175,5 +193,31 @@
   }
   100% {
     filter: brightness(0.7);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .dropdown {
+  
+    padding-top: 10vh;
+    z-index: 9;
+    width: 100%;
+    background: linear-gradient(to right, rgb(4, 34, 31), rgb(5, 12, 11));
+    height: 20vh;
+    font-family: monospace;
+    font-size: 1.3em;
+    color: rgb(31, 122, 110);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    transition: 300ms height, 200ms 100ms color;
+    cursor: pointer;
+      span {
+        &:hover {
+          color: rgb(36, 184, 164);
+          transition: 150ms color;
+        }
+      }
   }
 }

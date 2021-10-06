@@ -4,9 +4,9 @@ import NavBar from '../components/NavBar/NavBar.js';
 import Footer from '../components/Footer/Footer.js';
 import styles from '../styles/Home.module.scss';
 import MainBodyContainer from '../components/mainBody/mainBody.js';
-
+import { useRouter } from 'next/router';
 import { Parallax } from 'react-scroll-parallax';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import c1 from '../public/static/images/d1.png';
 import c2 from '../public/static/images/d2.png';
 import c3 from '../public/static/images/d3.png';
@@ -14,7 +14,22 @@ import c3 from '../public/static/images/d3.png';
 
 export default function Home() {
   
-  
+  const [drop, setDrop] = useState(false);
+  const router = useRouter();
+  const handleClick = (key) => {
+    switch (key) {
+        case 0:
+            router.push('/portfolio');
+            break;
+
+        case 1:
+            router.push('/freelance');
+            break;
+        default:
+            router.push('/contact');    
+    }
+  };
+
   return (
     <>
       <Head>
@@ -22,7 +37,13 @@ export default function Home() {
         <meta name="description" content="Taimor Khan's Blog Showcasing his skills and abilities" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <NavBar />
+      <NavBar drop={drop} setDrop={setDrop} />
+      
+      <div className={drop ? styles.dropdown : styles.dropdownHidden}>
+        <span onClick={() => handleClick(0)}>PORTFOLIO</span>
+        <span onClick={() => handleClick(1)}>FREELANCE</span>
+        <span onClick={() => handleClick(2)}>CONTACT</span>
+      </div>
       <MainBodyContainer>
         <Parallax y={[-110, 200]} className={styles.cubeContainer1}>
           <Image src={c1} alt='cube' width={300} height={200} id='c1' />
