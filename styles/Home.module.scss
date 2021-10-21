@@ -61,7 +61,7 @@
 
 
 .homeContainer {
-  margin-top: 12%;
+  margin-top: 5%;
   margin-bottom: 10%;
   position: relative;
   display: flex;
@@ -200,7 +200,8 @@
 @media screen and (max-width: 600px) {
   .dropdown {
   
-    padding-top: 10vh;
+    padding: 0;
+    margin: 0;
     z-index: 9;
     width: 100%;
     background: linear-gradient(to right, rgb(4, 34, 31), rgb(5, 12, 11));

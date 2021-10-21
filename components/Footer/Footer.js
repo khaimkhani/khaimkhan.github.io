@@ -4,7 +4,7 @@ import styles from './Footer.module.scss';
 const Footer = () => {
     return (
         <footer className={styles.footerContainer}>
-            Copyright 2021. Taimor Khan.
+            Copyright 2021. Taimor Khan. Made with Next.js.
         </footer>
     );
 }
