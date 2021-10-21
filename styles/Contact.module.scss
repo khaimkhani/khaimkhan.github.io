@@ -7,18 +7,19 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 0%;
+    margin-top: -5%;
+    padding: 0;
     height: 100vh;
     
 
         .socialContainer {
-            margin-top: 3%;
+            margin-top: 5%;
             color: rgb(255, 66, 66);
             width: 60%;
             position: relative;
             // top: 10%;
             
-            padding: 2%;
+            padding: 0 2% 0 2%;
             z-index: 4;
             transition: 400ms background-color, 400ms transform;
             cursor: pointer;
@@ -207,7 +208,7 @@
 @media screen and (max-width: 600px) {
     .dropdown {
     
-      padding-top: 10vh;
+      padding-top: 0;
       z-index: 9;
       width: 100%;
       background: linear-gradient(to right, rgb(4, 34, 31), rgb(5, 12, 11));
