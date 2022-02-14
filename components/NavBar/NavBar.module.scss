@@ -35,8 +35,9 @@
 
 .navItemsContainer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-right: 5%; //Temp, change back later
     align-items: center;
     width: 50%;
     font-family: monospace;

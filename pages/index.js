@@ -18,13 +18,13 @@ export default function Home() {
   const router = useRouter();
   const handleClick = (key) => {
     switch (key) {
-        case 0:
-            router.push('/portfolio');
-            break;
+        // case 0:
+        //     router.push('/portfolio');
+        //     break;
 
-        case 1:
-            router.push('/freelance');
-            break;
+        // case 1:
+        //     router.push('/freelance');
+        //     break;
         default:
             router.push('/contact');    
     }
@@ -40,8 +40,8 @@ export default function Home() {
       <NavBar drop={drop} setDrop={setDrop} />
       
       <div className={drop ? styles.dropdown : styles.dropdownHidden}>
-        <span onClick={() => handleClick(0)}>PORTFOLIO</span>
-        <span onClick={() => handleClick(1)}>FREELANCE</span>
+        {/* <span onClick={() => handleClick(0)}>PORTFOLIO</span>
+        <span onClick={() => handleClick(1)}>FREELANCE</span> */}
         <span onClick={() => handleClick(2)}>CONTACT</span>
       </div>
       <MainBodyContainer>

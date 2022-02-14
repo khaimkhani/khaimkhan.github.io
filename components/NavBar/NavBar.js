@@ -15,8 +15,8 @@ const NavBar = (props) => {
     const router = useRouter();
 
     const navItems = [
-        'PORTFOLIO',
-        'FREELANCE',
+        // 'PORTFOLIO',
+        // 'FREELANCE',
         'CONTACT'
     ]; 
 
@@ -24,13 +24,13 @@ const NavBar = (props) => {
 
     const handleClick = (key) => {
         switch (key) {
-            case 0:
-                router.push('/portfolio');
-                break;
+            // case 0:
+            //     router.push('/portfolio');
+            //     break;
 
-            case 1:
-                router.push('/freelance');
-                break;
+            // case 1:
+            //     router.push('/freelance');
+            //     break;
             default:
                 router.push('/contact');    
         }
