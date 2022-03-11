@@ -60,7 +60,7 @@ export default function Home() {
               SOFTWARE DEVELOPER<strong className={styles.blink}>_</strong>
             </h1>
             <p>
-            {'//'} I am a Full Stack Developer, with a passion for front-end development and design. 
+            {'//'} I am a Full Stack Developer, with a passion for ML/AI and Systems development. 
               Currently based in Toronto, attending the University of Toronto. My interests include:
               <ul className={styles.interest}>
                   <li>
